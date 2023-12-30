@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(243, 191, 86);
+}
+body nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav img {
+  margin-left: 70px;
+}
+body nav .list {
+  margin-right: 70px;
+}
+body nav div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body nav div a {
+  text-decoration: none;
+  color: rgb(0, 0, 100);
+}
+body nav div a.main {
+  color: blue;
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(62, 60, 60);
+}
+footer h3 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+footer .photo-div {
+  display: flex;
+  justify-content: center;
+}
+footer .main {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .main .second div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+footer .main div.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer .main div.first a {
+  text-decoration: none;
+  color: black;
+}
+
+body h1 {
+  margin-left: 70px;
+  font-size: 40px;
+}
+body h4 {
+  margin-left: 70px;
+  font-size: 25px;
+}
+
+.books {
+  display: flex;
+  margin-left: 70px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.books p {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+.books p:hover {
+  font-size: 20px;
+  color: red;
+}
+.books a {
+  text-decoration: none;
+}
+.books img {
+  width: 350px;
+  height: 600px;
+}
+
+/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,54 @@
+@use "nav_footer";
+
+@include nav_footer.navbar(blue);
+@include nav_footer.footer;
+
+@mixin mobile {
+    @media ( width <= 750px){
+        @content;
+    }
+}
+
+body{
+
+    h1{
+        margin-left: 70px;
+        font-size: 40px;
+    }
+    h4{
+        margin-left: 70px;
+        font-size: 25px;
+    }
+    
+}
+
+
+
+.books {
+
+    display: flex;
+    margin-left: 70px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    p{
+        text-align: center;
+        font-size: 18px;
+        color: black;
+    }
+    p:hover{
+        font-size: 20px;
+        color: red;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    img{    
+        width: 350px;
+        height: 600px;
+        
+    }
+}

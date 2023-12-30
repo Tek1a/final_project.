@@ -1,0 +1,168 @@
+body {
+  background-color: rgb(243, 191, 86);
+}
+body nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav img {
+  margin-left: 70px;
+}
+body nav .list {
+  margin-right: 70px;
+}
+body nav div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body nav div a {
+  text-decoration: none;
+  color: rgb(0, 0, 100);
+}
+body nav div a.main {
+  color: blue;
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(62, 60, 60);
+}
+footer h3 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+footer .photo-div {
+  display: flex;
+  justify-content: center;
+}
+footer .main {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .main .second div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+footer .main div.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer .main div.first a {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url(WorkSans-VariableFont_wght.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 191, 86);
+}
+body .photo-div {
+  display: flex;
+  justify-content: center;
+}
+@media (width <= 750px) {
+  body .photo-div {
+    width: 250px;
+    height: 300px;
+    justify-content: flex-start;
+  }
+}
+
+.sec-1 {
+  max-width: 1000px;
+  margin: 70px;
+  display: flex;
+  justify-content: center;
+}
+.sec-1 .main {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+}
+@media (width <= 750px) {
+  .sec-1 .main {
+    flex-direction: column;
+  }
+}
+.sec-1 .main .book {
+  min-width: 300px;
+}
+.sec-1 .main div {
+  border: black 2px solid;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgb(237, 164, 27);
+}
+.sec-1 .main h3 {
+  font-size: 30px;
+  text-align: center;
+  font-family: WorkSans;
+}
+.sec-1 .main p {
+  margin-top: 25px;
+  color: rgb(255, 61, 61);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.sec-1 .main button {
+  background-color: rgb(0, 0, 136);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.sec-1 .main button a {
+  text-decoration: none;
+  color: white;
+}
+.sec-1 .main button:hover {
+  background-color: rgb(61, 61, 248);
+}
+
+section.sec-2 {
+  display: flex;
+  justify-content: center;
+  margin: 70px 80px;
+}
+section.sec-2 div {
+  max-width: 1000px;
+  background-color: rgb(144, 132, 0);
+  border: black 3px solid;
+  border-radius: 5px;
+}
+section.sec-2 h2 {
+  text-align: center;
+  font-size: 35px;
+}
+section.sec-2 h4 {
+  margin: 10px;
+  border: 2px black solid;
+  border-radius: 5px;
+  background-color: rgb(213, 213, 29);
+  font-size: 20px;
+  transition: 0.3s;
+  color: grey;
+  padding: 7px;
+}
+section.sec-2 h4:hover {
+  color: black;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=main.css.map */

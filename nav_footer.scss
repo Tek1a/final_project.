@@ -1,0 +1,83 @@
+@mixin navbar($color){
+
+  
+    body{
+        background-color: rgb(243, 191, 86);
+    
+    nav{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            margin-left: 70px;
+    
+        }
+
+        .list{
+            margin-right: 70px;
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            a{
+                text-decoration: none;
+                color: rgb(0, 0, 100)
+            }
+
+            a.main{
+                color: $color;
+                text-decoration: none;
+            }
+        }
+        
+    }
+}
+}
+
+@mixin footer{
+    
+    footer {
+        background-color: rgb(62, 60, 60);
+
+        h3{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+            .photo-div{
+                display: flex;
+                justify-content: center;
+            }
+            .main{
+            display: flex;
+            justify-content: space-evenly;
+
+            .second div{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                padding-bottom: 30px;
+            }
+
+            div.first{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    
+                }
+            }
+
+        }
+    }
+
+}

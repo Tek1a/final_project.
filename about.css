@@ -1,0 +1,114 @@
+body {
+  background-color: rgb(243, 191, 86);
+}
+body nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav img {
+  margin-left: 70px;
+}
+body nav .list {
+  margin-right: 70px;
+}
+body nav div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body nav div a {
+  text-decoration: none;
+  color: rgb(0, 0, 100);
+}
+body nav div a.main {
+  color: blue;
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(62, 60, 60);
+}
+footer h3 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+footer .photo-div {
+  display: flex;
+  justify-content: center;
+}
+footer .main {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .main .second div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+footer .main div.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer .main div.first a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 191, 86);
+}
+body article {
+  display: flex;
+  justify-content: center;
+}
+body article .div-1 {
+  display: flex;
+  background-image: url("https://e0.pxfuel.com/wallpapers/498/967/desktop-wallpaper-the-librarians-the-librarians-old-library.jpg");
+  width: 1000px;
+  height: 400px;
+  text-align: center;
+  font-size: 70px;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+@media (width <= 750px) {
+  body article .div-1 {
+    width: 800px;
+    height: 300px;
+  }
+}
+body h2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 20px;
+}
+body .text-div {
+  display: flex;
+  margin: 50px 130px 20px 130px;
+  gap: 25px;
+}
+@media (width <= 750px) {
+  body .text-div {
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: column;
+  }
+}
+body .text-div div {
+  font-size: 20px;
+  color: rgb(129, 6, 6);
+}
+
+/*# sourceMappingURL=about.css.map */

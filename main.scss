@@ -1,0 +1,140 @@
+@use "nav_footer";
+
+@include nav_footer.navbar(blue);
+@include nav_footer.footer;
+
+@mixin mobile {
+    @media ( width <= 750px){
+        @content;
+    }
+}
+
+
+@font-face {
+    font-family: WorkSans;
+    src: url(WorkSans-VariableFont_wght.ttf)
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{ 
+    background-color: rgb(243, 191, 86);
+
+    .photo-div{
+        display: flex;
+        justify-content: center;
+    @include mobile{
+       width: 250px;
+       height: 300px;
+       justify-content: flex-start;
+}
+     }
+
+     
+}
+
+.sec-1 {
+
+    max-width: 1000px;
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+
+   
+
+    
+    
+    .main{
+        display: flex;
+        justify-content: space-between;
+        gap: 120px;
+
+        @include mobile{
+            flex-direction: column;
+    }
+       
+
+    .book{
+        min-width: 300px;
+    }
+
+    div{
+        border: black 2px solid;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: rgb(237, 164, 27)
+    }
+    h3{
+        font-size: 30px;
+        text-align: center;
+        font-family: WorkSans;
+    }
+
+    p{
+        margin-top: 25px;
+        color: rgb(255, 61, 61);
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    button{
+        background-color: rgb(0, 0, 136);
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: 0.3s;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+    }
+
+    button:hover{
+        background-color: rgb(61, 61, 248);
+    }
+
+
+    }
+}
+
+section.sec-2{
+    display: flex;
+    justify-content: center;
+    margin: 70px 80px;
+    
+    div{
+        max-width: 1000px;
+        background-color: rgb(144, 132, 0);
+        border: black 3px solid;
+        border-radius: 5px;
+
+    }
+
+    h2{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    h4{
+        margin: 10px;
+        border: 2px black solid;
+        border-radius: 5px;
+        background-color: rgb(213, 213, 29);
+        font-size: 20px;
+        transition: 0.3s;
+        color: grey;
+        padding: 7px;
+    }
+
+    h4:hover{
+        color: black;
+        font-size: 24px;
+    }
+}

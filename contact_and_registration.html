@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact_and_registration.css">
+    <title>რეგისტრაცია</title>
+</head>
+<body>
+    <nav >
+        <div>
+         <a href="main.html"><img src="photos/open-book.png" alt="book"></a>
+         <input type="text">
+        </div>
+        <div class="list"> 
+            <h3><a href="main.html" >მთავარი</a></h3>
+            <h3><a href="about.html">ჩვენს შესახებ</a></h3>
+            <h3><a href="services.html">სხვა ნაშრომები</a></h3>
+            <h3><a href="contact_and_registration.html" class="main">რეგისტრაცია</a></h3>
+            <h3><a href="books.html">წიგნები</a></h3>
+        </div>    
+</nav>
+       <h3 class="registration">რეგისტრაცია</h3>
+       <section>
+       <img src="photos/cont.jpg" alt="">
+        <form action="results.html">
+            <div>
+            <label for="name">სახელი:</label>
+                <input id="name" type="text" name="name" placeholder="სახელი" />
+            </div>
+            <div>
+            <label for="surname">გვარი:</label>
+                <input id="surname" type="text" name="surname" placeholder="გვარი" />
+            </div>
+            <div class=""><label>
+                ასაკი:
+                <input type="number" min="10" max="20" name="age" placeholder="ასაკი" />
+            </label></div>
+            <div class="">
+            <label for="email">
+                Email:
+            </label>
+                  <input
+            type="email"
+            name="mail"
+            placeholder="ელ-ფოსტა"
+      /></div>
+      <div class="">
+      <label for="password">Password: </label>
+      <input type="password" name="password" placeholder="პაროლი" /></div>
+      <div class="div_">
+      <h5>დამახსოვრება</h5>
+    <input
+        type="checkbox"
+        name="rememeber"
+        value="agree"
+        checked
+        class="inline"
+      /></div>
+      <div>
+      <label for="tel">ტელეფონის ნომერი:</label>
+      <input type="tel" name="mobile" placeholder="ტელეფონი" /></div>
+        <div>
+      <label for="country">ქვეყანა:</label>
+      <select name="country" id="country">
+        <option value="Georgia">საქართველო</option>
+        <option value="France">სარანგეთი</option>
+        <option value="Spain">ესპანეთი</option>
+        <option value="Italy">იტალია</option>
+      </select></div>
+      <br />
+      <div>
+      <p>სქესი:</p>
+      <div class="div_">
+      <span>მამრობითი</span>
+      <input type="radio" checked name="სქესი" value="male" class="inline" /></div>
+      <div class="div_">
+      <span>მდედრობითი</span>
+      <input type="radio" name="სქესი" value="female" class="inline" /></div>
+    </div>
+      <div class="">
+    <label for="date">დაბადების თარიღი: </label>
+      <input type="date" name="თარიღი" /></div>
+        <label for="comment">დამატებითი კომენტარი:</label>
+      <textarea name="comment" cols="30" rows="12"> </textarea>
+        <div class="div">
+      <button type="submit">Send</button>
+      <button type="reset">Clear</button></div>
+        </form>
+       </section>
+  
+  <footer>
+    <h3>Contact us</h3>
+    <div class="main">
+    <div class="first">
+      <a href="main.html">მთავარი</a>
+      <a href="about.html">ჩვენს შესახებ</a>
+      <a href="services.html">სხვა ნაშრომები</a>
+      <a href="contact_and_registration.html">რეგისტრაცია</a>
+    </div>
+
+    <div class="second">
+      <div class="div-1">
+          <img src="photos/1.jpg" width="21px" height="15px">
+          <p>info@gmail.com</p>
+          </div>
+          <div class="div-2">
+          <img src="photos/2.jpg" width="27px" height="22px">
+          <p>+ 995 579 51 40 11</p></div>
+          <div class="div-3">
+          <img src="photos/3.jpg" width="13px" height="22px">
+          <p>Tbilisi</p></div>
+      </div>
+    </div>
+    </div>
+    <div class="photo-div"><img src="photos/Tbs.png" alt="Tbs" width="100px" height="100px"></div>
+
+
+
+  </footer>
+       
+</body>
+</html>

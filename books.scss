@@ -1,0 +1,65 @@
+@use 'button';
+@use 'nav_footer';
+@include nav_footer.navbar(#0000ff);
+
+@include button.button;
+
+@mixin mobile {
+    @media ( width <= 750px){
+        @content;
+    }
+}
+body{
+
+    margin: 0px 70px 0px 70px;
+
+    nav img{
+        @include mobile{
+                margin-left: 20px;
+            }
+    }
+
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 50px;
+
+   
+    
+    section{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+
+        @include mobile{
+            flex-direction: column;
+           
+        }
+
+        h4{
+            font-size: 25px;
+        }
+        p{
+            font-size: 18px;
+        }
+
+        img{
+            width: 280px;
+            height: 450px;
+        }
+    }
+
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
