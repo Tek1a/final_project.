@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(243, 191, 86);
+}
+body nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav img {
+  margin-left: 70px;
+}
+body nav .list {
+  margin-right: 70px;
+}
+body nav div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body nav div a {
+  text-decoration: none;
+  color: rgb(0, 0, 100);
+}
+body nav div a.main {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+button {
+  background-color: rgb(0, 0, 136);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(61, 61, 248);
+}
+
+body {
+  margin: 0px 70px 0px 70px;
+}
+@media (width <= 750px) {
+  body nav img {
+    margin-left: 20px;
+  }
+}
+body .main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+}
+body .main section {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+@media (width <= 750px) {
+  body .main section {
+    flex-direction: column;
+  }
+}
+body .main section h4 {
+  font-size: 25px;
+}
+body .main section p {
+  font-size: 18px;
+}
+body .main section img {
+  width: 280px;
+  height: 450px;
+}
+
+/*# sourceMappingURL=book.css.map */
